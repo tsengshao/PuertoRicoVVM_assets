@@ -1,0 +1,43 @@
+{
+  "inputs": {
+    "dem": "Puerto_Rico_3DEP_10m/Puerto_Rico_DEM_10m_master.tif",
+    "landcover": "Puerto_Rico_LandCover_10m/Puerto_Rico_LandCover_10m_master.tif",
+    "surface_master": "model_PuertoRico_512x512km/Puerto_Rico_surface_master.nc"
+  },
+  "output": {
+    "directory": "model_PuertoRico_512x512km",
+    "write_master": true
+  },
+  "models": [
+    "vvm",
+    "vvmex"
+  ],
+  "horizontal_grid": {
+    "target_dx_m": [
+      1600.0
+    ],
+    "master_dx_m": 10.0,
+    "analysis_dx_m": 100.0,
+    "padding_km": 25.0,
+    "domain_width_km": 512.0,
+    "domain_height_km": 512.0,
+    "grid_multiple": 1,
+    "max_master_cells": 3631690000
+  },
+  "land_surface": {
+    "main_island_only": true,
+    "water_fraction_threshold": 0.5
+  },
+  "vertical_grid": {
+    "nz": 45,
+    "dz1_m": 100.0,
+    "dz_m": 500.0,
+    "stretching_domain_m": 15000.0,
+    "coordinate_type": "default",
+    "vvmex_drop_bottom_level": true
+  },
+  "topography": {
+    "periodic_cave_check": true,
+    "cave_check_max_iterations": 10
+  }
+}

@@ -1,0 +1,270 @@
+{
+  "configuration": {
+    "config": "config_512km_lev75.json",
+    "dem": "Puerto_Rico_3DEP_10m/Puerto_Rico_DEM_10m_master.tif",
+    "landcover": "Puerto_Rico_LandCover_10m/Puerto_Rico_LandCover_10m_master.tif",
+    "surface_master": "model_PuertoRico_512x512km/Puerto_Rico_surface_master.nc",
+    "output_dir": "model_PuertoRico_512x512km",
+    "dx": [
+      500.0,
+      100.0
+    ],
+    "master_dx": 10.0,
+    "analysis_dx": 100.0,
+    "padding_km": 25.0,
+    "domain_width_km": 512.0,
+    "domain_height_km": 512.0,
+    "grid_multiple": 1,
+    "main_island_only": true,
+    "water_threshold": 0.5,
+    "models": [
+      "vvm",
+      "vvmex"
+    ],
+    "vertical_config": null,
+    "nz": 75,
+    "dz": 250.0,
+    "dz1": 100.0,
+    "vertical_coordinate": "default",
+    "vertical_domain": 15000.0,
+    "vvmex_drop_bottom_level": true,
+    "cave_max_iter": 10,
+    "periodic_topo": true,
+    "write_master": true,
+    "max_master_cells": 3631690000
+  },
+  "domain": {
+    "source_master": "model_PuertoRico_512x512km/Puerto_Rico_surface_master.nc",
+    "center_x": 7383.689614450457,
+    "center_y": 2015445.675435536,
+    "domain_width_m": 512000.0,
+    "domain_height_m": 512000.0,
+    "bounds": [
+      -248616.31038554953,
+      1759445.675435536,
+      263383.68961445044,
+      2271445.675435536
+    ],
+    "master_dx_m": 10.0
+  },
+  "resolutions": [
+    {
+      "resolution_m": 500.0,
+      "nx": 1024,
+      "ny": 1024,
+      "height_min_m": 0.0018670520512387156,
+      "height_max_m": 1271.60009765625,
+      "height_mean_land_m": 235.57884216308594,
+      "land_cells": 34661,
+      "water_cells": 1013915,
+      "land_area_km2": 8665.25,
+      "water_area_km2": 253478.75,
+      "worldcover_domain_fractions": {
+        "tree_fraction": 0.023714562878012657,
+        "shrub_fraction": 0.00018306772108189762,
+        "grass_fraction": 0.005089805461466312,
+        "crop_fraction": 0.00025666921283118427,
+        "urban_fraction": 0.003138188971206546,
+        "bare_fraction": 8.76365666044876e-05,
+        "snow_fraction": 0.0,
+        "water_fraction": 0.9670143127441406,
+        "wetland_fraction": 0.00022717782121617347,
+        "mangrove_fraction": 0.0002885791764128953,
+        "moss_fraction": 0.0
+      },
+      "vvm_lu": [
+        1,
+        4,
+        7,
+        8,
+        13,
+        16,
+        17,
+        18,
+        19
+      ],
+      "vvm_soil": [
+        3,
+        6,
+        13,
+        14
+      ],
+      "vvm_slope": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "vvmex_vegtype": [
+        2,
+        7,
+        10,
+        11,
+        12,
+        13,
+        16,
+        17
+      ],
+      "vvmex_soiltype": [
+        3,
+        6,
+        13,
+        14
+      ],
+      "vvmex_slopetype": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9
+      ],
+      "mean_albedo": 8.183895111083984,
+      "mean_gvf": 2.7659313678741455,
+      "mean_lai": 0.18134805560112,
+      "vvm_caves": {
+        "caves_before": 111,
+        "cave_updates": 111,
+        "cave_iterations": 2,
+        "caves_remaining": 0
+      },
+      "vvmex_caves": {
+        "caves_before": 111,
+        "cave_updates": 111,
+        "cave_iterations": 2,
+        "caves_remaining": 0
+      },
+      "post_regrid_main_island_cleanup": {
+        "components_before": 9,
+        "components_after": 1,
+        "kept_land_cells": 34661,
+        "removed_land_cells": 10,
+        "removed_components": 8
+      },
+      "model_topography": {
+        "inland_water_cells": 209,
+        "inland_water_area_km2": 52.25,
+        "inland_water_topo_min": 2,
+        "inland_water_topo_max": 3,
+        "terrain_topo_min": 2,
+        "exterior_ocean_topo": 0
+      }
+    },
+    {
+      "resolution_m": 100.0,
+      "nx": 5120,
+      "ny": 5120,
+      "height_min_m": 0.0,
+      "height_max_m": 1308.353515625,
+      "height_mean_land_m": 236.10205078125,
+      "land_cells": 864760,
+      "water_cells": 25349640,
+      "land_area_km2": 8647.6,
+      "water_area_km2": 253496.4,
+      "worldcover_domain_fractions": {
+        "tree_fraction": 0.023715360090136528,
+        "shrub_fraction": 0.0001830364199122414,
+        "grass_fraction": 0.005088533274829388,
+        "crop_fraction": 0.00025667037698440254,
+        "urban_fraction": 0.0031383333262056112,
+        "bare_fraction": 8.75946061569266e-05,
+        "snow_fraction": 0.0,
+        "water_fraction": 0.9670222401618958,
+        "wetland_fraction": 0.0002267478994326666,
+        "mangrove_fraction": 0.00028148689307272434,
+        "moss_fraction": 0.0
+      },
+      "vvm_lu": [
+        1,
+        4,
+        7,
+        8,
+        13,
+        16,
+        17,
+        18,
+        19
+      ],
+      "vvm_soil": [
+        3,
+        6,
+        13,
+        14
+      ],
+      "vvm_slope": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "vvmex_vegtype": [
+        2,
+        7,
+        10,
+        11,
+        12,
+        13,
+        16,
+        17
+      ],
+      "vvmex_soiltype": [
+        3,
+        6,
+        13,
+        14
+      ],
+      "vvmex_slopetype": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "mean_albedo": 8.183852195739746,
+      "mean_gvf": 2.7652053833007812,
+      "mean_lai": 0.1813005805015564,
+      "vvm_caves": {
+        "caves_before": 1094,
+        "cave_updates": 1094,
+        "cave_iterations": 2,
+        "caves_remaining": 0
+      },
+      "vvmex_caves": {
+        "caves_before": 1094,
+        "cave_updates": 1094,
+        "cave_iterations": 2,
+        "caves_remaining": 0
+      },
+      "post_regrid_main_island_cleanup": {
+        "components_before": 72,
+        "components_after": 1,
+        "kept_land_cells": 864760,
+        "removed_land_cells": 455,
+        "removed_components": 71
+      },
+      "model_topography": {
+        "inland_water_cells": 5911,
+        "inland_water_area_km2": 59.11,
+        "inland_water_topo_min": 2,
+        "inland_water_topo_max": 8,
+        "terrain_topo_min": 2,
+        "exterior_ocean_topo": 0
+      }
+    }
+  ]
+}

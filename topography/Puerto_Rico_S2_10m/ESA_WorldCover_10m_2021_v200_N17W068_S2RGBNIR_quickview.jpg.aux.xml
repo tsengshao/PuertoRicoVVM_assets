@@ -1,0 +1,49 @@
+<PAMDataset>
+  <SRS dataAxisToSRSAxisMapping="2,1">GEOGCS["WGS 84",DATUM["WGS_1984",SPHEROID["WGS 84",6378137,298.257223563,AUTHORITY["EPSG","7030"]],AUTHORITY["EPSG","6326"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AXIS["Latitude",NORTH],AXIS["Longitude",EAST],AUTHORITY["EPSG","4326"]]</SRS>
+  <GeoTransform> -6.8000000000000000e+01,  8.3333333333333331e-05,  0.0000000000000000e+00,  1.8000000000000000e+01,  0.0000000000000000e+00, -8.3333333333333331e-05</GeoTransform>
+  <Metadata>
+    <MDI key="algorithm_version">V2.0.0</MDI>
+    <MDI key="AREA_OR_POINT">Area</MDI>
+    <MDI key="bands">Band 1: B04 (Red), Band 2: B03 (Green), Band 3: B02 (Blue), Band 4: B08 (Infrared)</MDI>
+    <MDI key="copyright">ESA WorldCover project 2021 / Contains modified Copernicus Sentinel data (2021) processed by ESA WorldCover consortium</MDI>
+    <MDI key="creation_time">2022-12-09 17:08:25.881589</MDI>
+    <MDI key="description">The ESA WorldCover Sentinel-2 median L2A (RGBNIR) composite is a color image made from images in Blue (B02), Green (B03), Red (B04) and Infrared (B08). </MDI>
+    <MDI key="license">CC-BY 4.0 - https://creativecommons.org/licenses/by/4.0/</MDI>
+    <MDI key="product_crs">EPSG:4326</MDI>
+    <MDI key="product_grid">1x1 degree tiling grid</MDI>
+    <MDI key="product_tile">N17W068</MDI>
+    <MDI key="product_type">Sentinel-2 median L2A (RGBNIR) composite</MDI>
+    <MDI key="product_version">V2.0.0</MDI>
+    <MDI key="reference">https://esa-worldcover.org</MDI>
+    <MDI key="time_end">2021-12-31T23:59:59Z</MDI>
+    <MDI key="time_start">2021-01-01T00:00:00Z</MDI>
+    <MDI key="title">ESA WorldCover Sentinel-2 median L2A (RGBNIR) composite at 10m resolution for year 2021</MDI>
+  </Metadata>
+  <Metadata domain="IMAGE_STRUCTURE">
+    <MDI key="SOURCE_COLOR_SPACE">YCbCr</MDI>
+    <MDI key="INTERLEAVE">PIXEL</MDI>
+    <MDI key="COMPRESSION">JPEG</MDI>
+  </Metadata>
+  <PAMRasterBand band="1">
+    <NoDataValue>0.00000000000000E+00</NoDataValue>
+    <Scale>0.0001</Scale>
+    <Metadata domain="IMAGE_STRUCTURE">
+      <MDI key="COMPRESSION">JPEG</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="2">
+    <NoDataValue>0.00000000000000E+00</NoDataValue>
+    <Scale>0.0001</Scale>
+    <Metadata domain="IMAGE_STRUCTURE">
+      <MDI key="COMPRESSION">JPEG</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="3">
+    <NoDataValue>0.00000000000000E+00</NoDataValue>
+    <Scale>0.0001</Scale>
+    <ColorInterp>Gray</ColorInterp>
+    <Metadata domain="IMAGE_STRUCTURE">
+      <MDI key="COMPRESSION">JPEG</MDI>
+    </Metadata>
+  </PAMRasterBand>
+</PAMDataset>
