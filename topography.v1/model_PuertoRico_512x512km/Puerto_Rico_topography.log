@@ -1,19 +1,15 @@
-2026-09-09 19:47:29,938 INFO Starting Puerto Rico TIFF -> surface/VVM/VVMex pipeline
-2026-09-09 19:47:29,939 INFO Pipeline configuration: config_512km_lev75.json
-2026-09-09 19:47:29,939 INFO Log file: model_PuertoRico_512x512km/Puerto_Rico_topography.log
-2026-09-09 19:47:29,941 INFO Vertical settings: VVM nz=75, dz=250.0 m, dz1=100.0 m, type=default
-2026-09-09 19:47:29,941 INFO Reusing surface master: model_PuertoRico_512x512km/Puerto_Rico_surface_master.nc
-2026-09-09 19:47:52,825 INFO Loaded common 10 m master grid (51200 x 51200); TIFF warping, domain discovery, padding, and write_master are skipped
-2026-09-09 19:47:52,825 INFO Vertical dimensions: VVM=75 levels; VVMex=74 levels (VVM bottom floor omitted)
-2026-09-09 19:47:52,825 WARNING Soil classes are prototype mappings because no independent soil dataset was supplied
-2026-09-09 19:47:52,826 WARNING Tg=300 K and soil moisture=0.3054033 m3/m3 are initialization defaults, not observations
-2026-09-09 19:47:52,826 WARNING shdmax/shdmin use the representative WorldCover GVF because no seasonal climatology was supplied
-2026-09-09 19:47:52,826 INFO Building 500m products directly from the common master grid
-2026-09-09 19:48:20,200 INFO 500m post-regrid main-island check: 9 -> 1 components; removed 10 cells in 8 disconnected components (2.50 km2)
-2026-09-09 19:49:22,315 INFO 500m model topography promotes 209 enclosed lake/river cells (52.25 km2) to topo >= 2
-2026-09-09 19:49:31,771 INFO 500m QA: 1024x1024, land 8665.2 km2, height max 1271.6 m, caves VVM/VVMex 0/0 remaining
-2026-09-09 19:49:31,771 INFO Building 100m products directly from the common master grid
-2026-09-09 19:50:48,493 INFO 100m post-regrid main-island check: 72 -> 1 components; removed 455 cells in 71 disconnected components (4.55 km2)
-2026-09-09 19:52:48,368 INFO 100m model topography promotes 5911 enclosed lake/river cells (59.11 km2) to topo >= 2
-2026-09-09 19:58:31,835 INFO 100m QA: 5120x5120, land 8647.6 km2, height max 1308.4 m, caves VVM/VVMex 0/0 remaining
-2026-09-09 19:58:31,836 INFO Completed all requested products; QA report: model_PuertoRico_512x512km/Puerto_Rico_topography_QA.json
+2026-09-10 15:41:38,009 INFO Starting Puerto Rico TIFF -> surface/VVM/VVMex pipeline
+2026-09-10 15:41:38,009 INFO Pipeline configuration: config_512km_lev34.json
+2026-09-10 15:41:38,009 INFO Log file: model_PuertoRico_512x512km/Puerto_Rico_topography.log
+2026-09-10 15:41:38,011 INFO Vertical settings: VVM nz=34, dz=500.0 m, dz1=100.0 m, type=default
+2026-09-10 15:41:38,011 INFO Reusing surface master: model_PuertoRico_512x512km/Puerto_Rico_surface_master.nc
+2026-09-10 15:42:00,966 INFO Loaded common 10 m master grid (51200 x 51200); TIFF warping, domain discovery, padding, and write_master are skipped
+2026-09-10 15:42:00,967 INFO Vertical dimensions: VVM=34 levels; VVMex=33 levels (VVM bottom floor omitted)
+2026-09-10 15:42:00,967 WARNING Soil classes are prototype mappings because no independent soil dataset was supplied
+2026-09-10 15:42:00,967 WARNING Tg=300 K and soil moisture=0.3054033 m3/m3 are initialization defaults, not observations
+2026-09-10 15:42:00,967 WARNING shdmax/shdmin use the representative WorldCover GVF because no seasonal climatology was supplied
+2026-09-10 15:42:00,967 INFO Building 1.6km products directly from the common master grid
+2026-09-10 15:42:19,402 INFO 1.6km post-regrid main-island check: 4 -> 1 components; removed 3 cells in 3 disconnected components (7.68 km2)
+2026-09-10 15:43:13,070 INFO 1.6km model topography promotes 10 enclosed lake/river cells (25.60 km2) to topo >= 2
+2026-09-10 15:43:13,600 INFO 1.6km QA: 320x320, land 8660.5 km2, height max 1190.5 m, caves VVM/VVMex 0/0 remaining
+2026-09-10 15:43:13,601 INFO Completed all requested products; QA report: model_PuertoRico_512x512km/Puerto_Rico_topography_QA.json

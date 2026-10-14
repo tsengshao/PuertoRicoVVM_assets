@@ -109,7 +109,8 @@ endif
 
 * -------------------------- left: land type -----------------------------
 'set parea 0.65 5.35 2.85 7.05'
-'set gxout shaded'
+*'set gxout shaded'
+'set gxout grfill'
 'set csmooth off'
 * Boundaries are midpoints between the valid (non-consecutive) class IDs.
 'set clevs 2.5 5.5 7.5 10.5 14.5 16.5 17.5 18.5 19.5 22'

@@ -29,7 +29,7 @@
     "water_fraction_threshold": 0.5
   },
   "vertical_grid": {
-    "nz": 45,
+    "nz": 34,
     "dz1_m": 100.0,
     "dz_m": 500.0,
     "stretching_domain_m": 15000.0,
